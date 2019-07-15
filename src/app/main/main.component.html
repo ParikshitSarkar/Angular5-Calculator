@@ -1,0 +1,54 @@
+
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+
+<div class="container-fluid d-flex justify-content-center">
+
+<div class="card" style="width: 400px; height: 300px; margin-top:5%;">
+
+  <div class="card-header">
+  
+
+    <div class="card-header">
+      <input type="text" name="result" value="" id="result" style="width:100%" [(ngModel)] = "currVal" readonly>
+    </div>
+  </div>
+
+  <div class="card-group">
+    <div class="card">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger btn-sm btn-block" (click) = "clr()">AC</button>
+        <button type="button" class="btn btn-outline-primary btn-md btn-block" value = "1" (click) = "dis('1')">1</button>
+        <button type="button" class="btn btn-outline-primary btn-md btn-block" value="3" (click)= "dis('3')">3</button>
+        <button type="button" class="btn btn-outline-primary btn-md btn-block" value="5" (click)= "dis('5')">5</button>
+        <button type="button" class="btn btn-outline-primary btn-md btn-block" value = "7" (click) = "dis('7')">7</button>
+        <button type="button" class="btn btn-outline-primary btn-md btn-block" value="9" (click)= "dis('9')">9</button>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger btn-sm btn-block" (click) = "del()">DEL</button>
+        <button type="button" class="btn btn-outline-primary btn-md btn-block" value="2" (click)= "dis('2')">2</button>
+        <button type="button" class="btn btn-outline-primary btn-md btn-block" value = "4" (click) = "dis('4')">4</button>
+        <button type="button" class="btn btn-outline-primary btn-md btn-block" value="6" (click)= "dis('6')">6</button>
+        <button type="button" class="btn btn-outline-primary btn-md btn-block" value="8" (click)= "dis('8')">8</button>
+        <button type="button" class="btn btn-outline-primary btn-md btn-block" value = "0" (click) = "dis('0')">0</button>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger btn-md btn-block" (click) = "solve()">Go</button>
+        <button type="button" class="btn btn-outline-danger btn-lg btn-block" value="+" (click) = "dis('+')">+</button>
+        <button type="button" class="btn btn-outline-danger btn-lg btn-block" value="-" (click) = "dis('-')">-</button>
+        <button type="button" class="btn btn-outline-danger btn-lg btn-block" value="*" (click) = "dis('*')">x</button>
+        <button type="button" class="btn btn-outline-danger btn-lg btn-block" value="/" (click) = "dis('/')">/</button>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+</div>
+
