@@ -42,8 +42,8 @@ export class MainComponent implements OnInit {
 
 //clr() sets the currVal to an empty string. 
 
-  clr():void{
-  	return this.currVal = ''; 
+  clr(){
+  	return this.currVal = '' ; 
   }
 
 //del() sets the currVal into a temporary string variable, which is used together with substr() 
